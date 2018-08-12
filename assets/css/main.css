@@ -4002,7 +4002,7 @@ video {
 }
 
 ul.features > li {
-	padding-left: 5em;
+	white-space: nowrap;
 }
 
 #client-quote {
@@ -4011,10 +4011,12 @@ ul.features > li {
 
 #client-quote:before {
 	content: open-quote;
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 #client-quote:after {
 	content: close-quote;
-	font-size: 2rem;
+	font-size: 2.5rem;
+	padding-left: 0.2rem;
+	position: absolute;
 }
