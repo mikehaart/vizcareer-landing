@@ -4004,3 +4004,17 @@ video {
 ul.features > li {
 	padding-left: 5em;
 }
+
+#client-quote {
+	quotes: "“" "”" "‘" "’";
+}
+
+#client-quote:before {
+	content: open-quote;
+	font-size: 2rem;
+}
+
+#client-quote:after {
+	content: close-quote;
+	font-size: 2rem;
+}
