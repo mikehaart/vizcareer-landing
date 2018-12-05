@@ -7,6 +7,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/cookie.css" />
+		<link rel="stylesheet" href="assets/css/signin.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
@@ -16,28 +18,35 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html"><img src="images/vizcareer-logo.svg" id="nav-logo"></a></h1>
-						<!-- <nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav> -->
+						<h1><a href="index.html"><img src="images/head-logo.png" id="nav-logo"></a></h1>
+							<!-- <nav id="nav">
+								<ul>
+									<li class="special">
+										<a href="#menu" class="menuToggle"><span>Menu</span></a>
+										<div id="menu">
+											<ul>
+												<li><a href="index.html">Home</a></li>
+												<li><a href="generic.html">Generic</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</nav> -->
+							<div id="signin">
+								<a href="app.vizcareer.com/auth"></a>
+								<button onclick="location.href='https://app.vizcareer.com/auth'">Log in / register</button>
+							</div>
 					</header>
 
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<h2><img id="hero-logo" src="images/vizcareer-logo.svg"></h2>
+							<h2><img id="hero-logo" src="images/head-logo.png"></h2>
 							<p>Recruitment Technology,<br />
 							like it's supposed to be.</p>
+							<form>
+								<input type="button" value="Request a demo" onclick="window.location.href='mailto:connor.haggerty@vizcareer.com?&subject=VizCareer%20demo%20request&body=Please%20provide%20us%20with%20your%20name%20and%20email%20address%20so%20we%20can%20get%20in%20touch'" />
+							</form>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
 					</section>
@@ -60,23 +69,21 @@
 						</div>
 					</section>
 
-					<section id="two" class="wrapper" style="background-color:#0D6A91">
+					<!-- <section id="two" class="wrapper" style="background-color:#0D6A91">
 						<div class="inner clients">
 							<h3 style="text-align: center">Testimonial</h3>
-							<p>VizCareer recently completed a 60 hire campaign for ExxonMobil in record time, with record number of hires (the most they had achieved before was 20 in one campaign)and at a dramatically reduced cost.</p>
-							<img src="images/exxonmobil-logo.svg" alt="ExxonMobil">
 							<p id="client-quote">
-								This campaign has been tremendously successful, for several reasons. The main ones being the quality and diversity of response to the video adverts coupled with the video review sessions; these in particular allowed us to “introduce” the candidates to the managers/supervisors who otherwise would not have met them until the final interviews/assessment. This really softened the impact of subjectivity for us as a team. We really enjoyed doing business with VizCareer; they are ethical, driven, introduce innovation and are totally committed to delivering to the customer needs.
+								quote here
 							</p>
 						</div>
-					</section>
+					</section> -->
 
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
 							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
 								<h2>Applicant Engagement System</h2>
-								<p>Let your applicants <strong>engage in your organisational brand</strong>, using the power of video and social media combined you can speak and engage with you target candidate pool about not only the position but also showcase your company ethos, working style and brand as well as ensure you ask the important questions your role demands.</p>
+								<p>Let your applicants <strong>engage in your organisational brand</strong>, using the power of video and social media combined you can speak and engage with your target candidate pool about not only the position but also showcase your company ethos, working style and brand as well as ensure you ask the important questions your role demands.</p>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -125,10 +132,23 @@
 								<h2>Engage with your potential hires now</h2>
 								<p>Speak with us about how VizCareer can innovate your recruitment process.</p>
 							</header>
-							<!-- <ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Get in touch</a></li>
-								<li><a href="#" class="button fit">Learn more</a></li>
-							</ul> -->
+							<ul class="actions stacked">
+								<li>
+									<form>
+										<input type="button" value="Request a demo" onclick="window.location.href='mailto:connor.haggerty@vizcareer.com?&subject=VizCareer%20demo%20request&body=Please%20provide%20us%20with%20your%20name%20and%20email%20address%20so%20we%20can%20get%20in%20touch'" />
+									</form>
+								</li>
+								<!-- <li><a href="#" class="button fit">Learn more</a></li> -->
+							</ul>
+						</div>
+					</section>
+
+					<section id="cookie-policy">
+						<div id="cookie-container">
+							<span id="cookie-message">
+								We use cookies to ensure that we give you the best experience on VizCareer.com. If you continue without changing your settings, we will assume that you are happy to receive all cookies on this website. However, if you would like to, you can change your browser cookie settings at any time. For more information please review our <a href="https://assets.vizcareer.com/privacy-policy.pdf" type="pdf">Privacy Policy</a>
+							</span>
+							<button onclick="setCookie()">Agree</button>
 						</div>
 					</section>
 
@@ -140,6 +160,12 @@
 						</ul>
 						<ul class="copyright">
 							<li>&copy; VizCareer 2018</li>
+						</ul>
+						<ul class="copyright">
+							<li><a href="https://assets.vizcareer.com/privacy-policy.pdf">Privacy</a></li>
+							<li><a href="https://assets.vizcareer.com/terms-and-conditions.pdf">Terms & Conditions</a></li>
+							<li><a href="https://assets.vizcareer.com/user-agreement.pdf">User Agreement</a></li>
+							<li><a href="https://assets.vizcareer.com/gdpr-statement.pdf">GDPR Statement</a></li>
 						</ul>
 					</footer>
 
@@ -153,6 +179,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/vc-cookie.js"></script>
 
 	</body>
 </html>
