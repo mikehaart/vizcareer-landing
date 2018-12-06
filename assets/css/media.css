@@ -1,0 +1,71 @@
+/* Media */
+.media {
+  padding-right: 4rem;
+  padding-left: 4rem;
+  color: #333;
+}
+
+.media h2 {
+  color: #333;
+  text-align: center;
+}
+
+#media-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -0.5rem -1rem;
+}
+
+.media-card {
+  margin: 0.5rem 1rem;
+  flex: 1;
+  min-width: 15rem;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: 0.2s;
+}
+
+.media-card:hover {
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.5);
+}
+
+.media-card heading {
+  padding: 1rem 1rem 0;
+  font-size: 2rem;
+  line-height: 125%;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 15rem;
+  color: #fff;
+  background-color: #2e3842;
+}
+
+.media-card p {
+  padding: 1rem 1rem 2rem;
+}
+
+.media-card span {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.media-card img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.media-card iframe {
+  width: 100%;
+  height: 15rem;
+}
